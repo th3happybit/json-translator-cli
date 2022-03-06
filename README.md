@@ -2,8 +2,9 @@
 simple cli to translate your json i18n files
 
 1. GET api key from: [Rapid api ms translator](https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/microsoft-translator-text/)
-2.  `pip install -r requirements.txt`
-3.  `python translate_cli.py -h`
+2. put api key in script in `translate` function
+3.  `pip install -r requirements.txt`
+4.  `python translate_cli.py -h`
 
 ### Usage:
 `python translate_cli.py -i <inputfile> --li=<input language> -o <outputfile> --lo=<output language>`

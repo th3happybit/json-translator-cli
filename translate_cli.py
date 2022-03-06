@@ -13,7 +13,7 @@ def translate(input, inputlanguage, outputlanguage):
     headers = {
         'content-type': "application/json",
         'x-rapidapi-host': "microsoft-translator-text.p.rapidapi.com",
-        'x-rapidapi-key': "0c04854be6mshdf9a5de23527865p1472e3jsn4c2ce93c1a9e"
+        'x-rapidapi-key': ""
         }
 
     response = requests.request("POST", url, data=payload, headers=headers, params=querystring)
