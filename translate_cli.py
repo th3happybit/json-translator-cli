@@ -31,7 +31,7 @@ def translate_file(input_file, inputlanguage, output_file, outputlanguage):
                 translated_data[key] = translate(data[key], inputlanguage, outputlanguage)
         print(translated_data)
         with open(output_file, 'w') as output_json_file:
-            json_text = json.dumps(translated_data, indent=2)
+            json_text = json.dumps(translated_data, ensure_ascii=False, indent=2)
             output_json_file.write(json_text)
 
 def main(argv):
